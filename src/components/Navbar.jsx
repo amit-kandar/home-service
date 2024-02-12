@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { LOGO } from '../config/constants';
@@ -17,6 +17,12 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+    const location = useLocation();
+
+    const updatedNavigation = navigation.map((item) => ({
+        ...item,
+        current: item.href === location.pathname,
+    }));
     return (
         <Disclosure as="nav" className="bg-gray-800">
             {({ open }) => (
@@ -33,7 +39,7 @@ export default function Navbar() {
                                 </div>
                                 <div className="hidden sm:ml-6 sm:block">
                                     <div className="flex space-x-4">
-                                        {navigation.map((item) => (
+                                        {updatedNavigation.map((item) => (
                                             <Link
                                                 key={item.name}
                                                 to={item.href}
@@ -65,7 +71,7 @@ export default function Navbar() {
 
                     <Disclosure.Panel className="sm:hidden">
                         <div className="space-y-1 px-2 pb-3 pt-2">
-                            {navigation.map((item) => (
+                            {updatedNavigation.map((item) => (
                                 <Disclosure.Button
                                     key={item.name}
                                     as="a"
