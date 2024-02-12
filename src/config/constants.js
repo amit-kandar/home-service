@@ -6,3 +6,4 @@ export const HEADPHONE_IMG = require('../assets/headphones-icon.png');
 export const CLEAN_IMG = require('../assets/clean-img.png');
 export const CLEAN_SMALL_IMG = require('../assets/clean-small-img.png');
 export const CHECK_ICON = require('../assets/check-icon.png');
+export const SERVICE_BANNER_ICON = require('../assets/service-banner-img.png');
