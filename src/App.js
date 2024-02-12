@@ -9,10 +9,12 @@ import AboutUs from './routes/AboutUs';
 import ContactUs from './routes/ContactUs';
 import Services from './routes/Services';
 import Testimonials from "./routes/Testimonials";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
