@@ -5,7 +5,7 @@ import { ArrowLongRightIcon } from '@heroicons/react/24/outline';
 
 function ServiceItem({ title, description, url, redirect_path }) {
     return (
-        <div className='max-w-96 min-h-[430px] max-h-[430px] flex flex-col items-center rounded-xl shadow-xl shadow-gray-200 hover:shadow-green-200 hover:shadow-xl'>
+        <div className='max-w-96 bg-white min-h-[430px] max-h-[430px] flex flex-col items-center rounded-xl shadow-xl shadow-gray-200 hover:shadow-green-200 hover:shadow-xl'>
             <Link to={redirect_path} className='w-full h-52'>
                 <img src={url} alt={title} className='min-w-full max-h-full rounded-t-xl' />
             </Link>
