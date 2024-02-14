@@ -1,18 +1,9 @@
-import React from 'react'
-import { useMediaQuery } from 'react-responsive';
+import React from 'react';
 
 function TestimonialCard({ name, img_url, rating, address, message }) {
     const maxRating = 5;
     const filledStars = Math.round(rating);
     const emptyStars = maxRating - filledStars;
-
-    const isTablet = useMediaQuery({ query: '(min-width: 768px)' });
-
-    let width = 1;
-
-    if (isTablet) {
-        width = 2;
-    }
 
     const renderStars = (count, className) => {
         return Array.from({ length: count }, (_, index) => (
