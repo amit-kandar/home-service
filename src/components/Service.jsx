@@ -6,7 +6,7 @@ import { SERVICE_BG_IMG } from '../config/constants';
 
 function Service() {
     return (
-        <div className='pb-14'>
+        <section className='py-14'>
             <div className='service w-full relative after:content[""] after:w-full after:h-[448px] after:top-0 after:absolute before:top-0 before:left-0 before:z-[1] before:content[""] before:w-full before:h-[448px] before:absolute before:bg-[#2F5FAD] before:opacity-80 ' style={{ backgroundImage: `url(${SERVICE_BG_IMG})`, position: 'relative', backgroundRepeat: "no-repeat" }}>
                 <div className='block z-[1] relative w-full top-10'>
                     <div className='text-center px-3'>
@@ -24,7 +24,7 @@ function Service() {
             <div className='w-full flex justify-center mt-24'>
                 <Link to="/services" className='uppercase px-10 py-3 bg-green-400 rounded-lg text-white hover:bg-green-500'>view all services</Link>
             </div>
-        </div>
+        </section>
     );
 }
 
