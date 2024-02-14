@@ -1,7 +1,6 @@
 export const LOGO = require('../assets/logo.png');
 export const HERO_IMG = require('../assets/home-banner.jpg');
 export const HOME_MAN_IMG = require('../assets/home-girls-img.png');
-export const LEAF_IMG = require('../assets/banner-left-leaf.png');
 export const HEADPHONE_IMG = require('../assets/headphones-icon.png');
 export const CLEAN_IMG = require('../assets/clean-img.png');
 export const CLEAN_SMALL_IMG = require('../assets/clean-small-img.png');
@@ -9,3 +8,4 @@ export const CHECK_ICON = require('../assets/check-icon.png');
 export const SERVICE_BANNER_ICON = require('../assets/service-banner-img.png');
 export const SERVICE_BG_IMG = require('../assets/service-bg-img.jpg');
 export const TESTIMONIALS_BG_IMG = require('../assets/design-img.png');
+export const TEST_BANNER_IMG = require('../assets/test-banner-img.png');

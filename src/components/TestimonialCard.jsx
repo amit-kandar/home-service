@@ -13,8 +13,8 @@ function TestimonialCard({ name, img_url, rating, address, message }) {
         ));
     };
     return (
-        <div className='w-full h-56 px-3 flex justify-center items-center'>
-            <div className='w-96 h-56 bg-gray-200 rounded-lg p-5'>
+        <div className='w-full h-auto px-3 flex justify-center items-center'>
+            <div className='w-96 min-h-56 bg-gray-200 rounded-lg p-5'>
                 <div className='w-full flex flex-row items-center gap-3'>
                     <div className='w-16 h-16'>
                         <img src={img_url} alt="user" className='w-full h-full rounded-full' />
