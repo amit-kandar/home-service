@@ -3,7 +3,7 @@ import { HEADPHONE_IMG, HERO_IMG, HOME_MAN_IMG } from '../config/constants';
 
 function Banner() {
     return (
-        <section className='relative w-full bg-cover bg-center h-[750px]' style={{ backgroundImage: `url(${HERO_IMG})` }}>
+        <section className='relative w-full bg-cover bg-center h-[800px]' style={{ backgroundImage: `url(${HERO_IMG})` }}>
             <div className="absolute inset-0 bg-blue-500 opacity-80"></div>
             <div className='w-full absolute flex flex-col lg:flex-row items-center lg:items-end justify-between lg:justify-between h-full'>
                 <div className='flex flex-col justify-center items-center px-3 md:px-20 lg:px-10 lg:justify-start lg:pt-32 h-full lg:w-[900px]'>
