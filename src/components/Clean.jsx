@@ -4,24 +4,24 @@ import { Link } from 'react-router-dom';
 
 function Clean() {
     return (
-        <div className="flex flex-col items-center justify-center mt-8 px-5 mb-20">
-            <div className='w-full md:w-3/4 lg:w-full flex flex-col lg:flex-row lg:gap-20'>
-                <div className='w-full flex flex-1 justify-start sm:justify-center lg:justify-start lg:items-center'>
-                    <div className="relative w-fit h-[330px]">
-                        <div className="flex justify-center items-center w-40 h-40 lg:w-48 lg:h-48 rounded-full bg-blue-700">
-                            <div className="w-28 h-28 lg:w-28 lg:h-28 rounded-full bg-white"></div>
-                            <div className="absolute top-5 left-2 flex justify-center w-72 h-72 lg:w-[450px] lg:h-[450px] rounded-full bg-green-400">
-                                <img src={CLEAN_IMG} alt="clean img" className="absolute top-5 lg:top-7 w-[17rem] h-[17rem] lg:w-[420px] lg:h-[420px] rounded-full" />
-                            </div>
-                            <div className="absolute bottom-0 left-0 w-36 h-36 lg:w-40 xl:h-40 flex justify-center rounded-full bg-blue-500">
-                                <img src={CLEAN_SMALL_IMG} alt="clean small img" className="absolute top-4 w-32 h-32 lg:w-36 lg:h-36 rounded-full" />
+        <div className="flex flex-col items-center justify-center mt-8 px-5 mb-5">
+            <div className='w-full md:w-3/4 lg:w-full flex flex-col lg:flex-row lg:justify-around'>
+                <div className='w-full flex justify-center sm:justify-center lg:justify-start lg:items-center lg:max-w-[500px]'>
+                    <div className="relative w-80 h-[330px] md:w-96 md:h-[370px] lg:w-[430px] lg:h-[410px]">
+                        <div className='top-0 left-0 w-36 h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 flex justify-center items-center bg-custom-blue rounded-full'>
+                            <div className='w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 bg-white rounded-full'></div>
+                        </div>
+                        <div className='absolute top-5 lg:top-8 w-72 h-72 md:w-80 md:h-80 lg:w-[440px] lg:h-[440px] rounded-full bg-custom-green'>
+                            <img src={CLEAN_IMG} alt="clean" className='absolute top-5 left-2 w-[270px] h-[270px] md:w-[300px] md:h-[300px] lg:w-[430px] lg:h-[430px] rounded-full' />
+                            <div className='absolute bottom-0 w-40 h-40 md:w-44 md:h-44 lg:w-60 lg:h-60 bg-custom-blue rounded-full flex justify-center'>
+                                <img src={CLEAN_SMALL_IMG} alt="clean small" className='absolute top-4 w-[150px] h-[150px] md:w-[170px] md:h-[170px] lg:w-56 lg:h-56 rounded-full' />
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="mt-4 flex-1 lg:mt-0 lg:min-w-[450px] ">
-                    <h3 className='text-black text-2xl font-semibold text-center lg:text-start lg:text-4xl'>Excellence in Every Detail - <span className='text-green-600'>Where Quality Meets Commitment.</span></h3>
+                <div className="mt-4 lg:mt-0 lg:max-w-[450px] ">
+                    <h3 className='text-black text-2xl md:text-3xl font-semibold text-center lg:text-start lg:text-5xl'>Excellence in Every Detail - <span className='text-green-600'>Where Quality Meets Commitment.</span></h3>
                     <p className='text-base text-gray-500 text-center mt-3 lg:text-start'>
                         At Yasar Home Service Company, commitment is our core value, driving us to deliver exceptional services and ensure your satisfaction. Our dedicated team embraces challenges with unwavering excellence—trust us for all your home service needs.
                     </p>
