@@ -9,3 +9,4 @@ export const SERVICE_BANNER_ICON = require('../assets/service-banner-img.png');
 export const SERVICE_BG_IMG = require('../assets/service-bg-img.jpg');
 export const TESTIMONIALS_BG_IMG = require('../assets/design-img.png');
 export const TEST_BANNER_IMG = require('../assets/test-banner-img.png');
+export const CONTACT_IMG = require('../assets/contact-img.png');
