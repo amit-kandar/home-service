@@ -56,7 +56,7 @@ function Footer() {
                         <i className="fa-brands fa-youtube border border-stone-300 rounded-full p-2 text-white hover:text-red-600 cursor-pointer"></i>
                     </Link>
                 </div>
-                <p className='text-white'>©2024 Yasar home service company , All Rights Reserved.</p>
+                <p className='text-white px-5'>©2024 Yasar home service company , All Rights Reserved. | Designed by <Link to="" className='text-custom-blue'>Amit Kandar</Link></p>
                 <div className='min-w-12 min-h-12 bg-custom-green flex justify-center items-center' onClick={scrollToTop}>
                     <ArrowLongUpIcon className='w-4 h-4 text-white' />
                 </div>
