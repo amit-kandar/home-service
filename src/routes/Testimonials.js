@@ -20,7 +20,7 @@ function Testimonials() {
                     </div>
                 </div>
             </div>
-            <div className='w-full flex justify-center mt-10'>
+            <div className='w-full flex justify-center py-10'>
                 <div className='w-full px-8 grid grid-cols-1 place-items-center gap-6 md:grid-cols-2 lg:grid-cols-3'>
                     {
                         testimonials.map((item, index) => {
