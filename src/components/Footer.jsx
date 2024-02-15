@@ -8,7 +8,7 @@ function Footer() {
     };
     return (
         <section className='pt-16 bg-stone-800'>
-            <div className='grid col-span-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-10 px-10'>
+            <div className='grid col-span-1 md:grid-cols-2 lg:grid-cols-4 gap-10 py-10 px-10'>
                 <div className='flex flex-col gap-3'>
                     <h2 className='text-white text-xl pl-3 border-l-[3px] border-l-custom-green'>About Us</h2>
                     <p className='text-sm text-stone-400'>Discover how we're reshaping homes with dedicated craftsmanship and a commitment to customer satisfaction—join us in creating your ideal living space.</p>
