@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import { ArrowLongUpIcon } from '@heroicons/react/24/outline';
 
 function Footer() {
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    };
     return (
         <section className='pt-16 bg-stone-800'>
             <div className='grid col-span-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-10 px-10'>
@@ -54,7 +57,7 @@ function Footer() {
                     </Link>
                 </div>
                 <p className='text-white'>©2024 Yasar home service company , All Rights Reserved.</p>
-                <div className='min-w-12 min-h-12 bg-custom-green flex justify-center items-center'>
+                <div className='min-w-12 min-h-12 bg-custom-green flex justify-center items-center' onClick={scrollToTop}>
                     <ArrowLongUpIcon className='w-4 h-4 text-white' />
                 </div>
             </div>
