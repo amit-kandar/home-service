@@ -25,7 +25,7 @@ function Contact() {
     });
 
     return (
-        <section className='w-full min-h-screen bg-custom-blue'>
+        <section className='w-full min-h-screen bg-custom-blue py-10'>
             <div className='w-full h-full flex flex-col lg:flex-row-reverse items-center justify-between'>
                 <div className="w-full flex-1 flex justify-center items-center lg:items-end h-96 lg:h-full">
                     <img src={CONTACT_IMG} alt="home man" width={300} className='md:w-[300px] lg:w-[500px]' />
