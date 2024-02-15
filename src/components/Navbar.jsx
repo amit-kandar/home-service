@@ -30,13 +30,13 @@ export default function Navbar() {
                     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                         <div className="relative flex h-20 items-center justify-between">
                             <div className="flex items-center justify-center sm:items-stretch sm:justify-start">
-                                <div className="flex flex-shrink-0 items-center">
+                                <Link to='/' className="flex flex-shrink-0 items-center">
                                     <img
                                         className="h-8 w-auto"
                                         src={LOGO}
                                         alt="company logo"
                                     />
-                                </div>
+                                </Link>
                                 <div className="hidden sm:ml-6 sm:block">
                                     <div className="flex space-x-4">
                                         {updatedNavigation.map((item) => (
