@@ -1,7 +1,7 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import { CONTACT_IMG } from '../config/constants';
+import { CONTACT_IMG, HERO_IMG } from '../config/constants';
 import Error from '../components/Error'
 
 function Contact() {
@@ -25,8 +25,14 @@ function Contact() {
     });
 
     return (
-        <section className='w-full min-h-screen bg-custom-blue py-10'>
-            <div className='w-full h-full flex flex-col lg:flex-row-reverse items-center justify-between'>
+        <section className='relative min-h-screen flex items-center justify-center'>
+            <div
+                className="absolute inset-0 w-full h-full bg-cover bg-center"
+                style={{ backgroundImage: `url(${HERO_IMG})` }}
+            >
+                <div className="absolute inset-0 bg-custom-blue opacity-85"></div>
+            </div>
+            <div className='h-full z-10 flex flex-col lg:flex-row-reverse items-center justify-between  py-10'>
                 <div className="w-full flex-1 flex justify-center items-center lg:items-end h-96 lg:h-full">
                     <img src={CONTACT_IMG} alt="home man" width={300} className='md:w-[300px] lg:w-[500px]' />
                 </div>
