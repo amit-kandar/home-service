@@ -63,6 +63,7 @@ function ContactUs() {
                                         value={formik.values.name}
                                         onChange={formik.handleChange}
                                         onBlur={formik.handleBlur}
+                                        autoComplete='true'
                                         className={`py-3 pl-3 w-full rounded-md bg-inherit border outline-none ${(formik.errors.name && formik.touched.name) || formik.isValid.name ? "border-red-500 focus:outline-[3.5px] focus:outline-offset-[-3px] focus:outline-red-500" : "border-zink-500 focus:outline-[3.5px] focus:outline-offset-[-3px] focus:outline-custom-green transition duration-200"}`}
                                     />
                                     <span className='absolute top-3 left-0 mx-3 transition duration-200 input-text'>Name</span>
@@ -166,8 +167,10 @@ function ContactUs() {
                     </div>
                 </div>
             </div>
-            <div className='w-full my-10 px-5'>
-                {/* <MapContainer /> */}
+            <div className='w-full flex justify-center my-10 px-5'>
+                <div className='w-full lg:w-4/5'>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5209.974580116529!2d88.40267528884736!3d22.578790820802357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027677c1c8a03b%3A0xe1bc02832a8f64a4!2sMani%20Square!5e0!3m2!1sen!2sin!4v1708165745892!5m2!1sen!2sin" className='w-full h-[600px] border-0' allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title='map'></iframe>
+                </div>
             </div>
         </section>
     )
