@@ -47,8 +47,8 @@ function ContactUs() {
                     </div>
                 </div>
             </div>
-            <div className='my-10 flex flex-col gap-10 md:flex-row'>
-                <div className='w-full h-full flex md:basis-3/4 flex-col justify-start items-start px-5 lg:py-14'>
+            <div className='my-10 flex flex-col gap-5 md:flex-row'>
+                <div className='w-full h-full flex md:basis-3/5 flex-col justify-start items-start px-5 lg:py-14'>
                     <h2 className='text-3xl text-left font-semibold'>
                         Get a free estimate
                     </h2>
@@ -69,7 +69,7 @@ function ContactUs() {
                             {(formik.errors.name && formik.touched.name) || formik.isValid.name ? <Error err={formik.errors.name} /> : ""}
                         </div>
 
-                        <div className='flex flex-wrap gap-1'>
+                        <div className='flex flex-wrap gap-3'>
                             <div className='flex flex-1 flex-col mb-3'>
                                 <label htmlFor="email" className='relative w-full min-w-48'>
                                     <input
@@ -122,7 +122,7 @@ function ContactUs() {
                         <button type="submit" className='py-3 px-8 bg-custom-green rounded-md text-lg uppercase font-serif text-white text-center'>Send</button>
                     </form>
                 </div>
-                <div className='min-w-32 h-full flex md:basis-1/4 flex-col justify-start items-start px-5 lg:py-14 '>
+                <div className='min-w-32 h-full flex md:basis-2/5 flex-col justify-start items-start px-5 lg:py-14 '>
                     <h2 className='text-3xl text-left uppercase font-semibold'>
                         Info
                     </h2>
