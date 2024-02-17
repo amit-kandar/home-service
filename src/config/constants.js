@@ -15,3 +15,7 @@ export const ABOUT_IMG = require('../assets/about-img.jpg');
 export const ABOUT_SMALL_IMG = require('../assets/about-small.jpg');
 export const MISSION_ICO = require('../assets/mission-icon.png');
 export const VISSION_ICO = require('../assets/vision-icon.png');
+export const CONTACT_BANNER_IMG = require('../assets/contact-banner-img.png');
+export const LOCATION = require('../assets/contact-location-icon.png');
+export const PHONE = require('../assets/contact-phone-icon.png');
+export const EMAIL = require('../assets/contact-email-icon.png');
